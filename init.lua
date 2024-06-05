@@ -1,3 +1,1 @@
 require("sh")
-print("hei")
-

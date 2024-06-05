@@ -1,2 +1,3 @@
 require("sh.keybinds")
-print("hei fra sh")
+require("sh.lazy")
+require("sh.base")
