@@ -1,0 +1,3 @@
+require("sh")
+print("hei")
+
