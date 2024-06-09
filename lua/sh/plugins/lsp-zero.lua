@@ -1,5 +1,5 @@
 return {
-    'VonHeikemen/lsp-zero.nvim', 
+    'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
 
     dependencies = {
@@ -26,14 +26,13 @@ return {
             use_fallback = true,
             update_on_delete = true,
         })
-        
+
         mason_lspconfig.setup({
             ensure_installed = {
                 "pyright",
                 "bashls",
                 "yamlls",
                 "terraformls",
-                "gopls",
                 "lua_ls",
             },
         })
@@ -46,11 +45,11 @@ return {
                 "markdownlint",
             },
         })
-        
+
         require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
         require("lspconfig").bashls.setup({})
-        require("lspconfig").gopls.setup({})
-        require("terraformls").terraformls.setup({})
+        require'lspconfig'.terraformls.setup{}
+--        require("terraformls").terraformls.setup({})
 
         require("lspconfig").pyright.setup({
             filetypes = { "python" },
