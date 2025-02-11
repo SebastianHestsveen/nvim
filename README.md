@@ -1,7 +1,7 @@
 # nvim 
 
-mye av dette er stjålet fra mathias <3
-https://gitlab.com/mathias_ws/nvim
+my ståjålet fra 
+https://github.com/tjdevries/advent-of-nvim
 
 # Dependencies
 gcc
