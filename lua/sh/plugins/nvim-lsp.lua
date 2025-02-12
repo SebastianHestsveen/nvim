@@ -35,6 +35,14 @@ return {
             local capabilities = require('blink.cmp').get_lsp_capabilities()
             require("lspconfig").lua_ls.setup { capabilities = capabilities }
             require 'lspconfig'.gopls.setup { capabilities = capabilities }
+
+            require 'lspconfig'.terraformls.setup { capabilities = capabilities }
+            vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+                pattern = { "*.tf", "*.tfvars" },
+                callback = function()
+                    vim.lsp.buf.format()
+                end,
+            })
         end,
     }
 }
