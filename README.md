@@ -2,7 +2,7 @@
 
 my ståjålet fra 
 https://github.com/tjdevries/advent-of-nvim
-
+å noe ståjålet fra mathias-ws da :) <3
 # Dependencies
 gcc
 npm
