@@ -1,4 +1,5 @@
 # nvim 
+test fugetic 
 
 my ståjålet fra 
 https://github.com/tjdevries/advent-of-nvim
