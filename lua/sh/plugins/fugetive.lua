@@ -1,3 +1,4 @@
+--test
 return {
     "tpope/vim-fugitive",
 
@@ -5,6 +6,9 @@ return {
 
     config = function()
         vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+        vim.keymap.set("n", "<leader>gA", function()
+            vim.cmd.Git({ "add *" })
+        end)
         vim.keymap.set("n", "<leader>gP", function()
             vim.cmd.Git({ "pull" })
         end)
