@@ -7,3 +7,4 @@ https://github.com/tjdevries/advent-of-nvim
 gcc
 npm
 python3.10-venv
+fugetive instaltion https://github.com/tpope/vim-fugitive
