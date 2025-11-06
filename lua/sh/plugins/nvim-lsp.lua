@@ -36,11 +36,11 @@ return {
                 end,
             })
             local capabilities = require('blink.cmp').get_lsp_capabilities()
-            require("lspconfig").lua_ls.setup { capabilities = capabilities }
-            require 'lspconfig'.bashls.setup { capabilities = capabilities }
-            require 'lspconfig'.pyright.setup { capabilities = capabilities }
-            require 'lspconfig'.gopls.setup { capabilities = capabilities }
-            require("lspconfig").yamlls.setup({
+            vim.lsp.config('stylua', { capabilities = capabilities })
+            vim.lsp.config('bashls', { capabilities = capabilities })
+            vim.lsp.config('pyright', { capabilities = capabilities })
+            vim.lsp.config('gopls', { capabilities = capabilities })
+            vim.lsp.config('yamlls', {
                 capabilities = capabilities,
                 settings = {
                     yaml = {
