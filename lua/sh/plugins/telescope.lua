@@ -22,9 +22,9 @@ return {
     local telescope = require("telescope.builtin")
 
     vim.keymap.set("n", "<leader>th", telescope.help_tags, {})
-    vim.keymap.set("n", "<leader>tf", telescope.find_files, {})
+    vim.keymap.set("n", "<leader>f", telescope.find_files, {})
     vim.keymap.set("n", "<C-p>", telescope.git_files, {})
-    vim.keymap.set("n", "<leader>ps", function()
+    vim.keymap.set("n", "<leader>g", function()
         telescope.live_grep()
     end)
 end,

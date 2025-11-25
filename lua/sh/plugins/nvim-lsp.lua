@@ -4,6 +4,7 @@ return {
         dependencies = {
             {
                 --https://github.com/folke/lazydev.nvim
+                'saghen/blink.cmp',
                 "folke/lazydev.nvim",
                 "williamboman/mason.nvim",
                 "williamboman/mason-lspconfig.nvim",
@@ -75,7 +76,7 @@ return {
                 },
             })
 
-            require 'lspconfig'.terraformls.setup { capabilities = capabilities }
+            vim.lsp.config('terraformls', {capabilities = capabilities})
             vim.api.nvim_create_autocmd({ "BufWritePre" }, {
                 pattern = { "*.tf", "*.tfvars" },
                 callback = function()
